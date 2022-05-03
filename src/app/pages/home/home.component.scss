@@ -1,0 +1,33 @@
+#home {
+  @apply w-screen min-h-screen;
+}
+
+#landing {
+  @apply w-full min-h-screen flex flex-col items-center justify-center;
+
+  #text{
+    @apply mx-5;
+  }
+}
+
+
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+    transform: translatey(-10px);
+  }
+
+  100% {
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+    transform: translateY(0px);
+  }
+}
+
+.arrow {
+  animation: float 3s ease-in-out infinite;
+}
