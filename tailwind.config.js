@@ -1,4 +1,6 @@
 module.exports = {
+  // mode: 'jit', Already Default Engine
+  // darkMode: 'media', Already media Default
   content: [
     "./src/**/*.{html,ts}",
   ],
@@ -6,4 +8,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 }
