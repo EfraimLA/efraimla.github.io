@@ -1,0 +1,13 @@
+<!-- card -->
+<div id="card" *ngIf="image" class="flex flex-col my-2 justify-center bg-white rounded-2xl shadow-xl">
+  <!-- img -->
+  <img class="aspect-video rounded-t-2xl object-cover object-top"
+       src="{{image}}"
+       alt="card"/>
+  <!-- text information -->
+  <div class="px-4 py-2">
+    <h1 class="text-2xl font-medium text-slate-600 pb-1">{{title}}</h1>
+    <div [innerHTML]="description" class="text-sm tracking-tight font-light text-slate-400 leading-6">
+    </div>
+  </div>
+</div>
