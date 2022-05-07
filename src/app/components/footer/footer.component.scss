@@ -1,0 +1,10 @@
+footer {
+  @apply flex items-center justify-center;
+  @apply mt-4;
+  min-height: 6vh;
+  border-top: 1px solid;
+
+  @media (min-width: 640px) {
+    min-height: 5vh;
+  }
+}
