@@ -24,13 +24,34 @@
   </div>
 
   <!-- Scroll Arrow -->
-  <div class="fixed flex w-screen justify-center bottom-2">
+  <div id="scroll_arrow" class="absolute flex w-screen justify-center bottom-2" *ngIf="showScrollArrow" [@fadeInOut]>
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"
          stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"/>
     </svg>
   </div>
-  <!-- Projects -->
-  <div></div>
+  <!-- My Stack Section -->
+  <div id="stack" class="text-center font-mono">
+
+    <h1>My Stack</h1>
+    <p class="text-justify mx-4 font-light font-sans">These are some languages and technologies i've used in my projects now and before.</p>
+
+    <h2 class="text-xl">Languages</h2>
+    <div class="w-full flex justify-evenly flex-wrap items-center icons">
+      <img src="assets/svg/java_logo.svg" class="w-8" alt="Java Logo">
+      <img src="assets/svg/python_logo.svg" class="w-8" alt="Python Logo">
+      <img src="assets/svg/typescript_logo.svg" class="w-8" alt="Typescript Logo">
+    </div>
+
+    <h2 class="text-xl">Technologies</h2>
+    <div class="w-full flex justify-evenly flex-wrap items-center mt-2 icons">
+      <img src="assets/svg/angular_logo.svg" class="w-12" alt="Angular Logo">
+      <img src="assets/svg/vuejs_logo.svg" class="w-10" alt="Vue Logo">
+      <img src="assets/svg/quarkus_logo.svg" class="w-8" alt="Quarkus Logo">
+      <img src="assets/svg/postgresql_logo.svg" class="w-10" alt="PostgreSQL Logo">
+      <img src="assets/svg/mongodb_logo.svg" class="w-36" alt="MongoDB Logo">
+      <img src="assets/svg/vertx_logo.svg" class="w-20" alt="Vertx Logo">
+    </div>
+  </div>
 
 </div>

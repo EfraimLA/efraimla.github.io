@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  margin: 0;
+html, body {
+  @apply  dark:bg-gray-900;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
 }
