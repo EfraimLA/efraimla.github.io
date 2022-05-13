@@ -1,6 +1,5 @@
 footer {
-  @apply flex items-center justify-center;
-  @apply mt-4;
+  @apply flex items-center justify-center mt-4 dark:text-white;
   min-height: 6vh;
   border-top: 1px solid;
 
