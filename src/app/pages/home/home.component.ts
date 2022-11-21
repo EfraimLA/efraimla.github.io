@@ -28,4 +28,7 @@ export class HomeComponent implements OnInit {
     window.addEventListener('scroll', () => this.showScrollArrow = window.scrollY <= 400);
   }
 
+  redirect(url: string) {
+    window.open(url)
+  }
 }
