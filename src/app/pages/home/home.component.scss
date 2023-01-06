@@ -5,16 +5,16 @@
 #landing {
   @apply w-full min-h-screen flex flex-col items-center justify-center;
 
-  #text{
+  #text {
     @apply mx-5;
   }
 }
 
-#stack{
+#stack {
   @apply w-full min-h-screen flex flex-col items-center justify-center;
 
-  .icons{
-    img{
+  .icons {
+    img {
       @apply m-4;
     }
   }
