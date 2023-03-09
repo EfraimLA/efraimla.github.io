@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="constructionTitle" datatype="html">
+        <source> Hello, i´m Efraim<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Full Stack Developer </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <note priority="1" from="description">Title for welcome page</note>
+        <note priority="1" from="meaning">Welcome Title</note>
+      </trans-unit>
+      <trans-unit id="constructionSubtitle" datatype="html">
+        <source> I&apos;m a programming enthusiast, interested in helping others to optimize his work and make life simpler. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">Subtitle for welcome page</note>
+        <note priority="1" from="meaning">Welcome subtitle</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

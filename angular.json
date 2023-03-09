@@ -16,6 +16,15 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -57,6 +66,13 @@
               ],
               "outputHashing": "all"
             },
+            "es": {
+              "localize": [
+                "es"
+              ],
+              "outputPath": "dist/portfolio-es/",
+              "i18nMissingTranslation": "error"
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -76,6 +92,9 @@
             },
             "development": {
               "browserTarget": "portfolio:build:development"
+            },
+            "es": {
+              "browserTarget": "portfolio:build:es"
             }
           },
           "defaultConfiguration": "development"
