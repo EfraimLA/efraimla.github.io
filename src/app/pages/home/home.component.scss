@@ -20,6 +20,42 @@
   }
 }
 
+
+.slider {
+  @apply m-auto overflow-hidden relative w-auto;
+  height: 100px;
+
+  .slide-track {
+    @apply flex;
+    animation: scroll 40s linear infinite;
+    width: calc(250px * 14);
+  }
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+
+.scroll-container {
+  @apply overflow-hidden whitespace-nowrap bg-transparent h-full;
+  padding: 5px 70px 5px 20px;
+
+  .gridscroll {
+    @apply inline-block;
+
+    img {
+      margin-right: 22px;
+    }
+  }
+}
+
 @keyframes float {
   0% {
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));

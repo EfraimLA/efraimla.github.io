@@ -26,6 +26,20 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     window.addEventListener('scroll', () => this.showScrollArrow = window.scrollY <= 400);
+
+/*    const imageContainer = document.getElementById('imageContainer');
+    // @ts-ignore
+    const imageScrollWidth = imageContainer.scrollWidth;
+
+    window.addEventListener('load', () => {
+      self.setInterval(() => {
+        // @ts-ignore
+        if (imageContainer.scrollLeft !== imageScrollWidth) {
+          // @ts-ignore
+          imageContainer.scrollTo(imageContainer.scrollLeft + 1, 0)
+        }
+      }, 15)
+    });*/
   }
 
   redirect(url: string) {
