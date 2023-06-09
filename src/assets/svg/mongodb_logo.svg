@@ -14,7 +14,7 @@
       }
 
       .cls-4 {
-        fill: #21313c;
+        fill: #fff;
       }
 
       /* Automatically change text color */

@@ -7,7 +7,7 @@
 
   <style>
   .vert {
-    fill: #022B37;
+    fill: #fff;
   }
 
   @media (prefers-color-scheme: dark) {

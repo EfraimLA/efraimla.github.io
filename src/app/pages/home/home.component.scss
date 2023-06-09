@@ -40,3 +40,51 @@
 #scroll_arrow {
   animation: float 3s ease-in-out infinite;
 }
+
+@mixin progress-bar-calc($progress) {
+  height: 8px;
+  width: 39%;
+  //border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    height: 100%;
+    display: block;
+    width: $progress;
+    color: black;
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    background-color: black;
+
+    @apply dark:bg-white;
+  }
+
+  @apply dark:border-white;
+}
+
+@mixin progress-bar-generate($limit: 10) {
+  @for $i from 1 through $limit {
+    .progress-bar-#{($i * 10)} {
+      @include progress-bar-calc($i * 10%);
+    }
+  }
+}
+
+@include progress-bar-generate();
+
+.svg-black {
+
+}
+
+.svg-white {
+  svg {
+    g {
+      fill: white;
+    }
+  }
+}

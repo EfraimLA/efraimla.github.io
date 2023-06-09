@@ -26,11 +26,11 @@
       <stop
          id="stop11303"
          offset="0"
-         style="stop-color:#ffe052;stop-opacity:1" />
+         style="stop-color:#fff;stop-opacity:1" />
       <stop
          id="stop11305"
          offset="1"
-         style="stop-color:#ffc331;stop-opacity:1" />
+         style="stop-color:#fff;stop-opacity:1" />
     </linearGradient>
     <linearGradient
        gradientUnits="userSpaceOnUse"
@@ -47,11 +47,11 @@
       <stop
          id="stop9517"
          offset="0"
-         style="stop-color:#387eb8;stop-opacity:1" />
+         style="stop-color:#fff;stop-opacity:1" />
       <stop
          id="stop9519"
          offset="1"
-         style="stop-color:#366994;stop-opacity:1" />
+         style="stop-color:#fff;stop-opacity:1" />
     </linearGradient>
     <linearGradient
        gradientUnits="userSpaceOnUse"
