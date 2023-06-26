@@ -1,19 +1,27 @@
+<script>
+	import { _ } from 'svelte-i18n';
+
+</script>
+
 <section id='not-found'>
-	<h1 class='text-4xl'>Error!</h1>
-	<h2>Page not found</h2>
+	<img src='/images/not_found.jpeg' alt='not found figurative image' />
+	<h1 class='text-4xl'>{$_('not_found.title')}</h1>
+	<h2>{$_('not_found.subtitle')}</h2>
 
 	<br>
-	<a href='/'>You can go home clicking <u>here</u></a>
+	<a href='/'>
+		{$_('not_found.home_link')}
+	</a>
 </section>
 
 <style lang='postcss'>
     section {
-        @apply min-h-screen overflow-hidden m-0 p-0;
-        @apply bg-gray-600 text-white;
+        @apply min-h-screen overflow-hidden m-0 p-2;
+        @apply dark:bg-gray-800 dark:text-white;
         @apply flex flex-col items-center justify-center ;
     }
 
-    @media (prefers-color-scheme: dark) {
-
+    img {
+        @apply w-full mb-5 md:w-1/3;
     }
 </style>

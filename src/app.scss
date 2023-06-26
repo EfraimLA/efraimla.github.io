@@ -3,6 +3,9 @@
 @import "tailwindcss/utilities";
 
 body, html {
-  margin: 0;
-  padding: 0;
+  @apply dark:bg-gray-900;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
 }
