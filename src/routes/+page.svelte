@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let showScrollArrow = true;
 
@@ -22,22 +23,28 @@
 		<div class='w-full flex flex-wrap justify-evenly mt-6 md:flex-col md:items-center'>
 			<div class='flex items-center px-1 md:mb-4'>
 				<img src='/svg/mexico_flag.svg' alt='Mexico Flag' class='w-6 mr-1.5'>
-				<span class='text-sm md:text-base'>Mexican</span>
+				<span class='text-sm md:text-base'>
+					{$_('home.nationality')}
+				</span>
 			</div>
 			<div class='flex items-center px-1 md:mb-4'>
 				<img src='/svg/birthday_cake.svg' alt='Birthday Cake' class='w-6 mr-1.5'>
-				<span class='text-sm mt-0.5 md:text-base'>19 Years</span>
+				<span class='text-sm mt-0.5 md:text-base'>
+					{$_('home.age')}
+				</span>
 			</div>
 			<div class='flex items-center px-1 cursor-pointer' link="redirect('https://github.com/EfraimLA')">
 				<img src='/svg/logo_github.svg' alt='Github Logo' class='w-6 mr-1.5 dark:invert'>
-				<span class='text-sm md:text-base'>efraimla</span>
+				<span class='text-sm md:text-base'>
+					efraimla
+				</span>
 			</div>
 		</div>
 	</div>
 
 	<!-- Scroll Arrow -->
 	{#if showScrollArrow}
-		<div id='scroll_arrow' class='absolute flex w-screen justify-center bottom-2'>
+		<div id='scroll_arrow' class='absolute flex w-screen justify-center bottom-2' transition:fade>
 			<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 arrow' fill='none' viewBox='0 0 24 24'
 					 stroke='currentColor'
 					 stroke-width='2'>

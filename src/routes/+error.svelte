@@ -1,6 +1,5 @@
 <script>
 	import { _ } from 'svelte-i18n';
-
 </script>
 
 <section id='not-found'>
