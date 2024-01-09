@@ -11,11 +11,21 @@
 }
 
 #stack {
-  @apply w-full min-h-screen flex flex-col items-center justify-center;
+  @apply w-full min-h-screen grid items-center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   .icons {
     img {
       @apply m-4;
+    }
+  }
+
+  .card {
+    @apply flex flex-col items-center justify-self-center;
+    width: 90%;
+
+    .card-item {
+      @apply w-full flex justify-around items-center;
     }
   }
 }
@@ -43,12 +53,13 @@
 
 @mixin progress-bar-calc($progress) {
   height: 8px;
-  width: 39%;
+  width: 100%;
   //border-radius: 5px;
   border: 1px solid black;
   color: black;
   overflow: hidden;
   position: relative;
+
 
   span {
     height: 100%;
