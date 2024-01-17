@@ -8,6 +8,10 @@
 	onMount(async () => window.addEventListener('scroll', () => showScrollArrow = window.scrollY <= 400));
 </script>
 
+<svelte:head>
+	<title>Efraim's Porfolio</title>
+</svelte:head>
+
 <div id='home'>
 	<!-- Landing -->
 	<div id='landing'>
