@@ -1,0 +1,1 @@
+const e={title:"Hello, i'm Efraim<br/>Full Stack Developer",subtitle:"I'm a programming enthusiast, interested in helping others to optimize his work and make life simpler.",nationality:"Mexican",age:"19 Years"},t={title:"Error",subtitle:"Page not found",home_link:"You can go back home clicking here"},o={home:e,not_found:t};export{o as default,e as home,t as not_found};

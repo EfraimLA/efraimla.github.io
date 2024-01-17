@@ -1,16 +1,32 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <defs>
-    <style>.cls-1 {
-      fill: #4695eb;
-    }
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
 
-    .cls-2 {
-      fill: #ff004a;
-    }
+      .cls-2 {
+        fill: #8c8c8c;
+      }
 
-    .cls-3 {
-      fill: #fff;
-    }</style>
+      .cls-3 {
+        fill: #c4c4c4;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .cls-1 {
+          fill: #ffffff;
+        }
+
+        .cls-2 {
+          fill: #8c8c8c;
+        }
+
+        .cls-3 {
+          fill: #c4c4c4;
+        }
+      }
+    </style>
   </defs>
   <title>quarkus_icon_rgb_1024px_default</title>
   <polygon class="cls-1" points="669.34 180.57 512 271.41 669.34 362.25 669.34 180.57"/>
