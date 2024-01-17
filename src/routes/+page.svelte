@@ -22,7 +22,7 @@
 		<!-- Personal Info -->
 		<div class='w-full flex flex-wrap justify-evenly mt-6 md:flex-col md:items-center'>
 			<div class='flex items-center px-1 md:mb-4'>
-				<img src='/svg/mexico_flag.svg' alt='Mexico Flag' class='w-6 mr-1.5'>
+				<img src='/svg/world_logo.svg' alt='Mexico Flag' class='w-6 mr-1.5'>
 				<span class='text-sm md:text-base'>
 					{$_('home.nationality')}
 				</span>
@@ -56,52 +56,110 @@
 	<!-- My Stack Section -->
 	<div id='stack' class='text-center font-mono font-medium'>
 
-		<h1 class='font-medium'>My Stack</h1>
-		<p class='text-gray-600 dark:text-gray-300 text-sm font-light tracking-tight leading-tight md:text-base'>These are
-			some languages and technologies i've used before.
-		</p>
+		<!--    <p class="text-gray-600 dark:text-gray-300 text-sm font-light tracking-tight leading-tight md:text-base">These are-->
+		<!--      some languages and technologies i've used before.-->
+		<!--    </p>-->
 
-		<h2 class='text-xl font-medium'>Languages</h2>
-		<div class='w-full flex justify-evenly flex-wrap items-center icons'>
-			<img src='/svg/java_logo.svg' class='w-8' alt='Java Logo'>
-			<img src='/svg/python_logo.svg' class='w-8' alt='Python Logo'>
-			<img src='/svg/typescript_logo.svg' class='w-8' alt='Typescript Logo'>
-		</div>
+		<div class='card icons'>
+			<h2 class='text-xl font-medium'>Languages</h2>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/java_logo.svg' class='w-8' alt='Java Logo'>
+				</div>
 
-		<h2 class='text-xl font-medium'>Frameworks</h2>
-		<div class='w-full flex justify-evenly flex-wrap items-center mt-2 icons'>
-			<img src='/svg/angular_logo.svg' class='w-12' alt='Angular Logo'>
-			<img src='/svg/vuejs_logo.svg' class='w-10' alt='Vue Logo'>
-			<img src='/svg/quarkus_logo.svg' class='w-8' alt='Quarkus Logo'>
-			<img src='/svg/vertx_logo.svg' class='w-20' alt='Vertx Logo'>
-		</div>
+				<div class='progress-bar-80'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/python_logo.svg' class='w-8 svg-white' alt='Python Logo'>
+				</div>
 
-		<h2 class='text-xl font-medium'>Databases</h2>
-		<div class='w-full flex justify-evenly flex-wrap items-center mt-2 icons'>
-			<img src='/svg/postgresql_logo.svg' class='w-10' alt='PostgreSQL Logo'>
-			<img src='/svg/mongodb_logo.svg' class='w-36' alt='MongoDB Logo'>
-		</div>
-	</div>
+				<div class='progress-bar-40'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/typescript_logo.svg' class='w-8' alt='Typescript Logo'>
+				</div>
 
-	<!-- My Projects Section -->
-	<!-- <div id="projects" class="text-center font-mono font-medium">
-		<h1 class="font-medium">My Projects</h1>
-		<p class="text-gray-600 dark:text-gray-300 text-sm font-light tracking-tight leading-tight md:text-base">Here are
-			some
-			projects i've worked on.
-		</p>
-		<div class="w-full flex justify-evenly flex-wrap items-center mt-2">
-			<div class="w-full flex flex-col items-center justify-center">
-				<img src="assets/svg/logo_github.svg" alt="Github Logo" class="w-6 mr-1.5 dark:invert">
-				<span class="text-sm md:text-base">efraimla/quarkus-rest-api</span>
+				<div class='progress-bar-40'>
+					<span></span>
+				</div>
 			</div>
 		</div>
-	</div> -->
+
+		<div class='card icons'>
+			<h2 class='text-xl font-medium'>Frameworks</h2>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/angular_logo.svg' class='w-12' alt='Angular Logo'>
+				</div>
+
+				<div class='progress-bar-80'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/vuejs_logo.svg' class='w-10' alt='Vue Logo'>
+				</div>
+
+				<div class='progress-bar-40'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/quarkus_logo.svg' class='w-8' alt='Quarkus Logo'>
+				</div>
+
+				<div class='progress-bar-40'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/vertx_logo.svg' class='w-20' alt='Vertx Logo'>
+				</div>
+
+				<div class='progress-bar-40'>
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+		<div class='card icons'>
+			<h2 class='text-xl font-medium'>Databases</h2>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/postgresql_logo.svg' class='w-10' alt='PostgreSQL Logo'>
+				</div>
+
+				<div class='progress-bar-80'>
+					<span></span>
+				</div>
+			</div>
+			<div class='card-item'>
+				<div class='w-2/5 flex justify-center'>
+					<img src='/svg/mongodb_logo.svg' class='w-8' alt='MongoDB Logo'>
+				</div>
+
+				<div class='progress-bar-80'>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <style lang='scss'>
   #home {
     @apply w-screen min-h-screen dark:text-white;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
 
   #landing {
@@ -113,11 +171,21 @@
   }
 
   #stack {
-    @apply w-full min-h-screen flex flex-col items-center justify-center;
+    @apply w-full min-h-screen grid items-center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
     .icons {
       img {
-        @apply m-4;
+        @apply mr-4 my-4;
+      }
+    }
+
+    .card {
+      @apply flex flex-col items-center justify-self-center;
+      width: 90%;
+
+      .card-item {
+        @apply w-full flex justify-around items-center;
       }
     }
   }
@@ -141,5 +209,55 @@
 
   #scroll_arrow {
     animation: float 3s ease-in-out infinite;
+  }
+
+  @mixin progress-bar-calc($progress) {
+    @apply mr-4;
+    height: 8px;
+    width: 100%;
+    //border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    overflow: hidden;
+    position: relative;
+
+
+    span {
+      height: 100%;
+      display: block;
+      width: $progress;
+      color: black;
+      line-height: 30px;
+      position: absolute;
+      text-align: end;
+      padding-right: 5px;
+      background-color: black;
+
+      @apply dark:bg-white;
+    }
+
+    @apply dark:border-white;
+  }
+
+  @mixin progress-bar-generate($limit: 10) {
+    @for $i from 1 through $limit {
+      .progress-bar-#{($i * 10)} {
+        @include progress-bar-calc($i * 10%);
+      }
+    }
+  }
+
+  @include progress-bar-generate();
+
+  .svg-black {
+
+  }
+
+  .svg-white {
+    svg {
+      g {
+        fill: white;
+      }
+    }
   }
 </style>
