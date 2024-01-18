@@ -9,3 +9,7 @@ body, html {
   padding: 0 !important;
   overflow-x: hidden !important;
 }
+
+.icon {
+  @apply mr-4 my-4;
+}

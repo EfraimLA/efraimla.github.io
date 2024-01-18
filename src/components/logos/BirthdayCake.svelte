@@ -1,0 +1,83 @@
+<svg class="{$$restProps.class || ''}" version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg'
+		 xmlns:xlink='http://www.w3.org/1999/xlink' x='0px'
+		 y='0px'
+		 viewBox='0 -8 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'>
+    <g>
+	<rect y='400.696' width='512' height='33.391' />
+			<rect x='100.174' y='66.783' width='33.391' height='155.826' />
+			<rect x='189.217' y='66.783' width='33.391' height='155.826' />
+			<rect x='378.435' y='66.783' width='33.391' height='155.826' />
+			<rect x='289.391' y='66.783' width='33.391' height='155.826' />
+</g>
+	<g>
+	<rect class='candle-top' x='100.174' width='33.391' height='33.391' />
+		<rect class='candle-top' x='189.217' width='33.391' height='33.391' />
+		<rect class='candle-top' x='289.391' width='33.391' height='33.391' />
+		<rect class='candle-top' x='378.435' width='33.391' height='33.391' />
+</g>
+	<polygon points='66.783,322.783 66.783,289.391 33.391,289.391 33.391,222.609 0,222.609 0,478.609 33.391,478.609 33.391,322.783
+	' />
+	<rect x='166.957' y='289.391' width='33.391' height='33.391' />
+	<rect x='311.652' y='289.391' width='33.391' height='33.391' />
+	<rect x='66.783' y='322.783' width='100.174' height='33.391' />
+	<rect x='200.348' y='322.783' width='111.304' height='33.391' />
+	<rect x='345.043' y='322.783' width='100.174' height='33.391' />
+	<polygon points='478.609,222.609 478.609,289.391 445.217,289.391 445.217,322.783 478.609,322.783 478.609,478.609 512,478.609
+	512,222.609 ' />
+	<rect x='33.391' y='478.609' width='445.217' height='33.391' />
+	<rect x='33.391' y='189.217' width='445.217' height='33.391' />
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+	<g>
+</g>
+</svg>
+
+<style>
+    rect, polygon {
+        fill: #000;
+    }
+
+    .candle-top {
+        fill: none;
+        stroke: #000;
+        stroke-width: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        rect, polygon {
+            fill: #fff !important;
+        }
+
+        .candle-top {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 12px;
+        }
+    }
+</style>

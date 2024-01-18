@@ -2,6 +2,18 @@
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import AngularLogo from '../components/logos/AngularLogo.svelte';
+	import BirthdayCake from '../components/logos/BirthdayCake.svelte';
+	import WorldLogo from '../components/logos/WorldLogo.svelte';
+	import GitHubLogo from '../components/logos/GitHubLogo.svelte';
+	import JavaLogo from '../components/logos/JavaLogo.svelte';
+	import PythonLogo from '../components/logos/PythonLogo.svelte';
+	import TypescriptLogo from '../components/logos/TypescriptLogo.svelte';
+	import VueJSLogo from '../components/logos/VueJSLogo.svelte';
+	import QuarkusLogo from '../components/logos/QuarkusLogo.svelte';
+	import VertxLogo from '../components/logos/VertxLogo.svelte';
+	import PostgreSQLLogo from '../components/logos/PostgreSQLLogo.svelte';
+	import MongoDBLogo from '../components/logos/MongoDBLogo.svelte';
 
 	let showScrollArrow = true;
 
@@ -26,19 +38,19 @@
 		<!-- Personal Info -->
 		<div class='w-full flex flex-wrap justify-evenly mt-6 md:flex-col md:items-center'>
 			<div class='flex items-center px-1 md:mb-4'>
-				<img src='/svg/world_logo.svg' alt='Mexico Flag' class='w-6 mr-1.5'>
+				<WorldLogo class='w-6 mr-1.5' />
 				<span class='text-sm md:text-base'>
 					{$_('home.nationality')}
 				</span>
 			</div>
 			<div class='flex items-center px-1 md:mb-4'>
-				<img src='/svg/birthday_cake.svg' alt='Birthday Cake' class='w-6 mr-1.5'>
+				<BirthdayCake class='w-6 mr-1.5' />
 				<span class='text-sm mt-0.5 md:text-base'>
 					{$_('home.age')}
 				</span>
 			</div>
 			<div class='flex items-center px-1 cursor-pointer' link="redirect('https://github.com/EfraimLA')">
-				<img src='/svg/logo_github.svg' alt='Github Logo' class='w-6 mr-1.5 dark:invert'>
+				<GitHubLogo class='w-6 mr-1.5' />
 				<span class='text-sm md:text-base'>
 					efraimla
 				</span>
@@ -64,11 +76,11 @@
 		<!--      some languages and technologies i've used before.-->
 		<!--    </p>-->
 
-		<div class='card icons'>
+		<div class='card'>
 			<h2 class='text-xl font-medium'>Languages</h2>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/java_logo.svg' class='w-8' alt='Java Logo'>
+					<JavaLogo class='w-8' />
 				</div>
 
 				<div class='progress-bar-80'>
@@ -77,7 +89,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/python_logo.svg' class='w-8 svg-white' alt='Python Logo'>
+					<PythonLogo class='w-10' />
 				</div>
 
 				<div class='progress-bar-40'>
@@ -86,7 +98,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/typescript_logo.svg' class='w-8' alt='Typescript Logo'>
+					<TypescriptLogo class='w-9' />
 				</div>
 
 				<div class='progress-bar-40'>
@@ -95,11 +107,11 @@
 			</div>
 		</div>
 
-		<div class='card icons'>
+		<div class='card'>
 			<h2 class='text-xl font-medium'>Frameworks</h2>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/angular_logo.svg' class='w-12' alt='Angular Logo'>
+					<AngularLogo class='w-14' />
 				</div>
 
 				<div class='progress-bar-80'>
@@ -108,7 +120,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/vuejs_logo.svg' class='w-10' alt='Vue Logo'>
+					<VueJSLogo class='w-11' />
 				</div>
 
 				<div class='progress-bar-40'>
@@ -117,7 +129,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/quarkus_logo.svg' class='w-8' alt='Quarkus Logo'>
+					<QuarkusLogo class='w-10' />
 				</div>
 
 				<div class='progress-bar-40'>
@@ -126,7 +138,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/vertx_logo.svg' class='w-20' alt='Vertx Logo'>
+					<VertxLogo class='w-20' />
 				</div>
 
 				<div class='progress-bar-40'>
@@ -135,11 +147,11 @@
 			</div>
 		</div>
 
-		<div class='card icons'>
+		<div class='card'>
 			<h2 class='text-xl font-medium'>Databases</h2>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/postgresql_logo.svg' class='w-10' alt='PostgreSQL Logo'>
+					<PostgreSQLLogo class='w-12' />
 				</div>
 
 				<div class='progress-bar-80'>
@@ -148,7 +160,7 @@
 			</div>
 			<div class='card-item'>
 				<div class='w-2/5 flex justify-center'>
-					<img src='/svg/mongodb_logo.svg' class='w-8' alt='MongoDB Logo'>
+					<MongoDBLogo class='w-8' />
 				</div>
 
 				<div class='progress-bar-80'>
@@ -179,7 +191,7 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
     .icons {
-      img {
+      .logo, img {
         @apply mr-4 my-4;
       }
     }
@@ -189,7 +201,7 @@
       width: 90%;
 
       .card-item {
-        @apply w-full flex justify-around items-center;
+        @apply w-full flex justify-around items-center my-3;
       }
     }
   }
@@ -216,7 +228,7 @@
   }
 
   @mixin progress-bar-calc($progress) {
-    @apply mr-4;
+    @apply mr-5;
     height: 8px;
     width: 100%;
     //border-radius: 5px;
@@ -253,15 +265,5 @@
 
   @include progress-bar-generate();
 
-  .svg-black {
 
-  }
-
-  .svg-white {
-    svg {
-      g {
-        fill: white;
-      }
-    }
-  }
 </style>
