@@ -2,12 +2,15 @@
   "home": {
     "title": "Hola, soy Efraim<br/>Desarrollador fullstack",
     "subtitle": "Soy un entusiasta de programación, enfocado en ayudar a los demás a solucionar problemas y hacer su vida más simple",
-    "nationality": "Mexicano",
+    "nationality": "México",
     "age": "19 años"
   },
   "not_found": {
     "title": "Página no encontrada",
     "subtitle": "Parece que la ruta que estabas buscando no existe",
     "home_link": "Puedes volver a la página de inicio haciendo click aquí"
+  },
+  "footer": {
+    "title": "Hecho por Efraim, parte del equipo Linset."
   }
 }

@@ -17,7 +17,15 @@
 
 	let showScrollArrow = true;
 
-	onMount(async () => window.addEventListener('scroll', () => showScrollArrow = window.scrollY <= 400));
+	const arrowListener = () => showScrollArrow = window.scrollY <= 400;
+
+	onMount(() => {
+		window.addEventListener('scroll', arrowListener);
+
+		return () => window.removeEventListener('scroll', arrowListener);
+	});
+
+	const handleGitHubButton = () => window.open('https://github.com/EfraimLA', '_blank');
 </script>
 
 <svelte:head>
@@ -49,7 +57,8 @@
 					{$_('home.age')}
 				</span>
 			</div>
-			<div class='flex items-center px-1 cursor-pointer' link="redirect('https://github.com/EfraimLA')">
+			<div class='flex items-center px-1 cursor-pointer'
+					 on:click='{handleGitHubButton}'>
 				<GitHubLogo class='w-6 mr-1.5' />
 				<span class='text-sm md:text-base'>
 					efraimla
@@ -70,106 +79,110 @@
 	{/if}
 
 	<!-- My Stack Section -->
-	<div id='stack' class='text-center font-mono font-medium'>
+	<div id='stack-container'>
+		<div id='stack'>
 
-		<!--    <p class="text-gray-600 dark:text-gray-300 text-sm font-light tracking-tight leading-tight md:text-base">These are-->
-		<!--      some languages and technologies i've used before.-->
-		<!--    </p>-->
+			<!--    <p class="text-gray-600 dark:text-gray-300 text-sm font-light tracking-tight leading-tight md:text-base">These are-->
+			<!--      some languages and technologies i've used before.-->
+			<!--    </p>-->
 
-		<div class='card'>
-			<h2 class='text-xl font-medium'>Languages</h2>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<JavaLogo class='w-8' />
+			<div class='card'>
+				<h2 class='text-xl font-medium'>Languages</h2>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<JavaLogo class='w-8' />
+					</div>
+
+					<div class='progress-bar-80'>
+						<span></span>
+					</div>
 				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<PythonLogo class='w-10' />
+					</div>
 
-				<div class='progress-bar-80'>
-					<span></span>
+					<div class='progress-bar-40'>
+						<span></span>
+					</div>
+				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<TypescriptLogo class='w-9' />
+					</div>
+
+					<div class='progress-bar-40'>
+						<span></span>
+					</div>
 				</div>
 			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<PythonLogo class='w-10' />
-				</div>
 
-				<div class='progress-bar-40'>
-					<span></span>
+			<div class='card'>
+				<h2 class='text-xl font-medium'>Frameworks</h2>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<AngularLogo class='w-14' />
+					</div>
+
+					<div class='progress-bar-80'>
+						<span></span>
+					</div>
+				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<VueJSLogo class='w-11' />
+					</div>
+
+					<div class='progress-bar-40'>
+						<span></span>
+					</div>
+				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<QuarkusLogo class='w-10' />
+					</div>
+
+					<div class='progress-bar-40'>
+						<span></span>
+					</div>
+				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<VertxLogo class='w-20' />
+					</div>
+
+					<div class='progress-bar-40'>
+						<span></span>
+					</div>
 				</div>
 			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<TypescriptLogo class='w-9' />
-				</div>
 
-				<div class='progress-bar-40'>
-					<span></span>
-				</div>
-			</div>
-		</div>
+			<div class='card'>
+				<h2 class='text-xl font-medium'>Databases</h2>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<PostgreSQLLogo class='w-12' />
+					</div>
 
-		<div class='card'>
-			<h2 class='text-xl font-medium'>Frameworks</h2>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<AngularLogo class='w-14' />
+					<div class='progress-bar-80'>
+						<span></span>
+					</div>
 				</div>
+				<div class='card-item'>
+					<div class='w-2/5 flex justify-center'>
+						<MongoDBLogo class='w-8' />
+					</div>
 
-				<div class='progress-bar-80'>
-					<span></span>
-				</div>
-			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<VueJSLogo class='w-11' />
-				</div>
-
-				<div class='progress-bar-40'>
-					<span></span>
-				</div>
-			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<QuarkusLogo class='w-10' />
-				</div>
-
-				<div class='progress-bar-40'>
-					<span></span>
-				</div>
-			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<VertxLogo class='w-20' />
-				</div>
-
-				<div class='progress-bar-40'>
-					<span></span>
-				</div>
-			</div>
-		</div>
-
-		<div class='card'>
-			<h2 class='text-xl font-medium'>Databases</h2>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<PostgreSQLLogo class='w-12' />
-				</div>
-
-				<div class='progress-bar-80'>
-					<span></span>
-				</div>
-			</div>
-			<div class='card-item'>
-				<div class='w-2/5 flex justify-center'>
-					<MongoDBLogo class='w-8' />
-				</div>
-
-				<div class='progress-bar-80'>
-					<span></span>
+					<div class='progress-bar-80'>
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 </div>
+
 
 <style lang='scss'>
   #home {
@@ -186,9 +199,15 @@
     }
   }
 
+  #stack-container {
+    @apply min-h-screen flex flex-col items-center justify-center;
+  }
+
   #stack {
-    @apply w-full min-h-screen grid items-center;
+    @apply w-full grid items-center;
+    @apply text-center font-mono font-medium;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 50px;
 
     .icons {
       .logo, img {

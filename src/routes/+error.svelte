@@ -15,8 +15,7 @@
 
 <style lang='postcss'>
     section {
-        @apply min-h-screen overflow-hidden m-0 p-2;
-        @apply dark:bg-gray-800 dark:text-white;
+        @apply min-h-screen overflow-hidden m-0 p-2 dark:text-white;
         @apply flex flex-col items-center justify-center ;
     }
 

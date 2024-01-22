@@ -1,8 +1,9 @@
 <script lang='ts'>
 	import '../app.scss';
-	import uno from '../i18n';
-
+	// noinspection ES6UnusedImports
+	import uno from '../i18n'; // This is needed to load the translations
 	import { isLoading } from 'svelte-i18n';
+	import Footer from '../components/Footer.svelte';
 
 	export const prerender = true;
 </script>
@@ -11,4 +12,5 @@
 	Please wait...
 {:else}
 	<slot />
+	<Footer />
 {/if}

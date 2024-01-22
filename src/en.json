@@ -2,12 +2,15 @@
   "home": {
     "title": "Hello, i'm Efraim<br/>Full Stack Developer",
     "subtitle": "I'm a programming enthusiast, interested in helping others to optimize his work and make life simpler.",
-    "nationality": "Mexican",
+    "nationality": "Mexico",
     "age": "19 Years"
   },
   "not_found": {
     "title": "Error",
     "subtitle": "Page not found",
     "home_link": "You can go back home clicking here"
+  },
+  "footer": {
+    "title": "You can contact me through <br/>"
   }
 }
